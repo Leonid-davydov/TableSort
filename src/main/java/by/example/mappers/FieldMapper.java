@@ -1,19 +1,18 @@
-package by.acdLabs.application.converter;
+package by.example.mappers;
 
-public class Converter {
-    private Converter() {}
+public class FieldMapper {
+    private FieldMapper() {
+    }
 
-    public static Object convert(String s) {
+    public static Object map(String s) {
         try {
             return Long.parseLong(s);
         } catch (NumberFormatException ignored) {
-
         }
 
         try {
             return Double.parseDouble(s);
         } catch (NumberFormatException ignored) {
-
         }
 
         return s;
