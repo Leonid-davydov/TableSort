@@ -4,17 +4,19 @@ public class FieldMapper {
     private FieldMapper() {
     }
 
-    public static Object map(String s) {
+    public static Object map(String field) {
         try {
-            return Long.parseLong(s);
+            return Long.parseLong(field);
         } catch (NumberFormatException ignored) {
+            //If a field does not match an Long, it may still match a Double or a String
         }
 
         try {
-            return Double.parseDouble(s);
+            return Double.parseDouble(field);
         } catch (NumberFormatException ignored) {
+            //If a field does not match Double it is a String
         }
 
-        return s;
+        return field;
     }
 }
