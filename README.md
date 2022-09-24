@@ -9,7 +9,8 @@ TableSort is a program to sort a table from file (in.txt) and write it to anothe
 4. Presss clone botton
 5. In project structure set SDK and lenguage level to Java 8
 6. In File -> Settings -> Plagins find and instal Maven plagin
-7. Find class TableSort and run main method
+7. Create in.txt file in resources folder
+8. Find class TableSort and run main method
 
 ### Used technologies:
 1. Java 8
