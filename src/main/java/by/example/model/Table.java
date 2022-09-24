@@ -2,7 +2,6 @@ package by.example.model;
 
 import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.Iterator;
 
 public class Table {
     ArrayList<Row> table;
