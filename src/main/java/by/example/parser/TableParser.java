@@ -51,7 +51,7 @@ public class TableParser {
             }
         }
 
-        line.append("\n");
+        line.append("\r\n");
         writer.append(line);
     }
 }
